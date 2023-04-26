@@ -1,0 +1,149 @@
+@import "style.css";
+
+body {
+  background: linear-gradient(180.96deg, #39289F 0.82%, #422F9C 129.1%);
+}
+
+.preview {
+  padding: 203px calc(50% - 573px) 157px;
+  position: relative;
+}
+/*-----*/
+.preview-top {
+  width: 100%;
+  max-width: 527px;
+}
+
+.preview-top__span {
+  font: 700 20px/31px var(--poppins);
+  color: #e87d0e;
+}
+
+.preview-top__title {
+  font: 700 50px/78px var(--poppins);
+  margin-top: 17px;
+}
+
+.preview-top__text {
+  font: 500 16px/32px var(--poppins);
+  margin-top: 26px;
+}
+
+.preview-top__link {
+  display: inline-block;
+  font: 500 16px/24px var(--poppins);
+  color: var(--white);
+  background: var(--orange-gradient);
+  padding: 15px 30px;
+  border-radius: 40px;
+  margin-top: 50px;
+}
+
+.joystick, .cry, .unity, .unreal {
+  position: absolute;
+  z-index: -1;
+}
+
+.joystick {
+  top: 0;
+  right: 0; /*!!!!*/
+}
+
+.cry {
+  top: 202px;
+  right: 511px;
+}
+
+.unreal {
+  top: 218px;
+  right: 213px;
+}
+
+.unity {
+  top: 409px;
+  right: 695px;
+}
+/*----*/
+.preview-center {
+  margin-top: 178px;
+}
+
+.preview-center__panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.preview-center__title {
+  font: 700 31px/58px var(--rubik);
+}
+
+.preview-center__button {
+  font: 500 20px/38px var(--rubik);
+  color: var(--white);
+  padding: 10px 30px;
+  background: #ffffff1c;
+  border-radius: 10px;
+}
+
+.card-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;
+  margin-top: 57px;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img {
+  border-radius: 20px;
+}
+
+.card-info {
+  display: flex;
+  margin-top: 25px;
+}
+
+.card-info span {
+  margin-left: 12px;
+  font: 500 22px/41px var(--rubik);
+  color: var(--white);
+}
+
+.card-info svg {
+  width: 19px;
+}
+/*-----*/
+.preview-bottom {
+  margin-top: 129px;
+}
+
+.preview-bottom__title {
+  margin-inline: auto;
+  text-align: center;
+  font: 600 35px/66px var(--poppins);
+  max-width: 826px;
+}
+
+.preview-bottom__span {
+  display: inline-block;
+  font: 600 30px/56px var(--poppins);
+  margin-top: 67px;
+}
+
+.preview-bottom__text {
+  font: 600 16px/30px var(--poppins);
+  margin-top: 32px;
+  max-width: 545px;
+}
+
+.preview-bottom img {
+  margin-top: 46px;
+  width: 100%;
+}
+/*------*/

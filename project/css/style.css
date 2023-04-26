@@ -1,0 +1,91 @@
+@import "font.css";
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --rubik: "Rubik", sans-serif;
+  --white: #fff;
+  --black: #1c140f;
+  --dark-orange: #dc7000;
+  --light-orange: #fa9021;
+  --orange-gradient: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+[type="checkbox"], [type="radio"], [type="file"] {
+  display: none;
+}
+
+body {
+  color: var(--white);
+  font: 400 14px/1.4 "Arial", var(--poppins), var(--rubik); /*могу ли я так указать???*/
+}
+/*header*/
+.header {
+  position: absolute;
+  z-index: 5;
+  top: 37px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 0 calc(50% - 665px);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo, .header__link, .menu__link {
+  color: var(--white);
+}
+
+.logo {
+  font: 800 29px/45px var(--poppins);
+}
+
+.menu-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__item {
+  margin-right: 88px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item:hover {}
+
+.menu__link {
+  font: 400 16px/24px var(--poppins);
+}
+
+.active {}
+
+.header__link {
+  font: 400 13px/20px var(--poppins);
+  background: var(--light-orange);
+  border-radius: 6px;
+  padding: 12px 28px;
+  margin-left: 43px;
+}
