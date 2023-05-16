@@ -127,10 +127,6 @@ body {
   margin-left: 8px;
 }
 /***Общий блок****/
-.common-block {
-  margin-top: 105px;
-}
-
 .common-block__title {
   font: 600 30px/1.875 var(--poppins);
 }
@@ -206,7 +202,6 @@ body {
 /****footer****/
 .footer {
   background: #070707;
-  /*min-height: 376px;*/
   padding-top: 73px;
 }
 
@@ -234,8 +229,6 @@ body {
   margin-top: 25px;
 }
 
-.about-block {}
-
 .about-block__title, .contact-block__title {
   font: 500 17px/26px var(--poppins);
 }
@@ -254,30 +247,34 @@ body {
   transition: var(--time);
 }
 
-.contact-block {}
-
 .contact-block__tel {
   display: inline-block;
   margin-top: 11px;
 }
 
-.site-list {
+.site-list, .top-info-item__site-list {
   display: flex;
   width: 100%;
   max-width: 184px;
   justify-content: space-between;
+}
+
+.site-list {
   align-self: end;
 }
 
-.site-link {
+.site-link, .top-info-item__site-item {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);;
-  background: var(--white);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.site-link {
+  background: var(--white);
 }
 
 .copyright {

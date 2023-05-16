@@ -2,9 +2,204 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta type="keywords" content=""><!-- Это надо??? -->
+  <meta type="description" content=""><!-- Это надо??? -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us</title>
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 <body>
+<header class="header">
+  <a href="index.html" class="logo">LOGO</a><!-- ??? -->
 
+  <div class="menu-wrap"><!--указать ширину чтобы убрать марджины у списка-->
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="about.html" class="menu__link">About us</a>
+        </li>
+        <li class="menu__item">
+          <a href="services.html" class="menu__link">Portfolio</a>
+        </li>
+        <li class="menu__item">
+          <a href="news.html" class="menu__link">News</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header__link">Contact us</a>
+  </div>
+</header>
+
+<main class="content">
+  <section class="content__top">
+    <span class="top__location"><a href="index.html">Home</a> > <a href="contact.html" class="active">Contact us</a></span>
+    <h2 class="top__title">Lorem Ipsum is simply dummy text of the printing and.</h2>
+    <p class="top__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <img class="top__img" src="img/map.svg" alt="map"><!--Как правильно вставлять этот объект?-->
+    <ul class="top-info-list">
+      <li class="top-info-item">
+        <span class="top-info-item__follow">Follow us</span>
+        <div class="top-info-item__site-list">
+          <a href="#" class="top-info-item__site-item">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.99924 1.9925H9.09474V0.0845C8.90574 0.0585 8.25574 0 7.49874 0C5.91924 0 4.83724 0.9935 4.83724 2.8195V4.5H3.09424V6.633H4.83724V12H6.97424V6.6335H8.64674L8.91224 4.5005H6.97374V3.031C6.97424 2.4145 7.14024 1.9925 7.99924 1.9925Z"/>
+            </svg>
+          </a>
+          <a href="#" class="top-info-item__site-item">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.48173 0H3.51971C1.57931 0 0.000732422 1.57858 0.000732422 3.51898V9.4811C0.000732422 11.4214 1.57931 13 3.51971 13H9.48183C11.4221 13 13.0007 11.4214 13.0007 9.4811V3.51898C13.0007 1.57858 11.4221 0 9.48173 0V0ZM12.2386 9.4811C12.2386 11.0012 11.0019 12.2379 9.48173 12.2379H3.51971C1.99955 12.2379 0.762847 11.0012 0.762847 9.4811V3.51898C0.762847 1.99881 1.99955 0.762114 3.51971 0.762114H9.48183C11.0019 0.762114 12.2386 1.99881 12.2386 3.51898V9.4811Z"/>
+              <path d="M6.50063 2.94531C4.54059 2.94531 2.94604 4.53986 2.94604 6.49989C2.94604 8.45993 4.54059 10.0545 6.50063 10.0545C8.46066 10.0545 10.0552 8.45993 10.0552 6.49989C10.0552 4.53986 8.46066 2.94531 6.50063 2.94531ZM6.50063 9.29236C4.96093 9.29236 3.70816 8.03969 3.70816 6.49989C3.70816 4.96019 4.96093 3.70743 6.50063 3.70743C8.04043 3.70743 9.29309 4.96019 9.29309 6.49989C9.29309 8.03969 8.04043 9.29236 6.50063 9.29236Z"/>
+              <path d="M10.1402 1.68311C9.56096 1.68311 9.08984 2.15432 9.08984 2.73344C9.08984 3.31266 9.56096 3.78388 10.1402 3.78388C10.7194 3.78388 11.1906 3.31266 11.1906 2.73344C11.1906 2.15422 10.7194 1.68311 10.1402 1.68311ZM10.1402 3.02166C9.98129 3.02166 9.85196 2.89233 9.85196 2.73344C9.85196 2.57445 9.98129 2.44522 10.1402 2.44522C10.2992 2.44522 10.4285 2.57445 10.4285 2.73344C10.4285 2.89233 10.2992 3.02166 10.1402 3.02166Z"/>
+            </svg>
+          </a>
+          <a href="#" class="top-info-item__site-item">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.0007 2.46919C12.5173 2.68125 12.0022 2.82181 11.4651 2.89006C12.0176 2.56019 12.4393 2.04181 12.6375 1.417C12.1224 1.72412 11.5537 1.94106 10.9475 2.06213C10.4584 1.54131 9.76129 1.21875 9.00079 1.21875C7.52529 1.21875 6.33742 2.41638 6.33742 3.88456C6.33742 4.09581 6.35529 4.29894 6.39917 4.49231C4.18348 4.38425 2.22292 3.32231 0.905857 1.70463C0.67592 2.10356 0.541045 2.56019 0.541045 3.05175C0.541045 3.97475 1.01636 4.79294 1.72486 5.26662C1.29667 5.2585 0.876607 5.13419 0.520732 4.93837C0.520732 4.9465 0.520732 4.95706 0.520732 4.96762C0.520732 6.26275 1.44454 7.3385 2.65598 7.58631C2.43904 7.64563 2.20261 7.67406 1.95723 7.67406C1.78661 7.67406 1.61436 7.66431 1.45267 7.62856C1.79798 8.684 2.77786 9.45994 3.94298 9.48512C3.03623 10.1944 1.88492 10.6218 0.638545 10.6218C0.419982 10.6218 0.210357 10.6121 0.000732422 10.5852C1.18129 11.3466 2.58042 11.7812 4.08923 11.7812C8.99348 11.7812 11.6747 7.71875 11.6747 4.19737C11.6747 4.07956 11.6707 3.96581 11.665 3.85287C12.1939 3.4775 12.6384 3.00869 13.0007 2.46919Z"/>
+            </svg>
+          </a>
+          <a href="#" class="top-info-item__site-item">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9981 11V10.9996H11.0008V6.96531C11.0008 4.99173 10.5759 3.47144 8.26869 3.47144C7.15952 3.47144 6.41519 4.0801 6.11131 4.65714H6.07923V3.65569H3.8916V10.9996H6.16952V7.36314C6.16952 6.40569 6.35102 5.47985 7.53673 5.47985C8.70502 5.47985 8.72244 6.57252 8.72244 7.42456V11H10.9981Z"/>
+              <path d="M0.182129 3.65601H2.4628V10.9999H0.182129V3.65601Z"/>
+              <path d="M1.32165 0C0.592441 0 0.000732422 0.591708 0.000732422 1.32092C0.000732422 2.05013 0.592441 2.65421 1.32165 2.65421C2.05086 2.65421 2.64257 2.05013 2.64257 1.32092C2.64211 0.591708 2.0504 0 1.32165 0V0Z"/>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="top-info-item">
+        <svg class="top-info-item__tel" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1_929)">
+            <path d="M10.0757 12.3489C11.1038 11.3208 11.1038 9.64807 10.0757 8.61999L6.46006 5.00434C5.90699 4.45122 5.14029 4.17096 4.3573 4.23542C3.58926 4.29864 2.89457 4.69016 2.45143 5.3095C2.35943 5.43805 2.27061 5.56848 2.18359 5.69997L9.45408 12.9705L10.0757 12.3489Z" fill="white"/>
+            <path d="M24.9955 23.5394L21.3798 19.9237C20.3519 18.8958 18.679 18.8956 17.6509 19.9237L17.0293 20.5454L24.3001 27.8161C24.4316 27.7291 24.5618 27.6399 24.6903 27.548C25.3096 27.1049 25.7011 26.4102 25.7644 25.6421C25.8289 24.859 25.5486 24.0926 24.9955 23.5394Z" fill="white"/>
+            <path d="M14.5435 21.939C13.8391 21.939 13.1771 21.6648 12.679 21.1668L8.83292 17.3207C8.33494 16.8227 8.0606 16.1605 8.0606 15.4562C8.0606 15.0561 8.14937 14.6698 8.31707 14.3193L1.2857 7.28784C0.296635 9.36458 -0.14106 11.6913 0.0395256 14.0267C0.282865 17.1738 1.64001 20.1301 3.86107 22.3511L7.64869 26.1386C9.86962 28.3596 12.826 29.7168 15.973 29.9602C16.3169 29.9868 16.6605 30 17.0033 30C18.9882 30 20.9409 29.5575 22.7118 28.7141L15.6804 21.6826C15.3299 21.8503 14.9435 21.939 14.5435 21.939Z" fill="white"/>
+            <path d="M17.6951 0C17.2097 0 16.8162 0.393516 16.8162 0.878906C16.8162 1.3643 17.2097 1.75781 17.6951 1.75781C23.5106 1.75781 28.2419 6.48914 28.2419 12.3047C28.2419 12.7901 28.6355 13.1836 29.1208 13.1836C29.6062 13.1836 29.9998 12.7901 29.9998 12.3047C29.9998 5.51988 24.4799 0 17.6951 0Z" fill="white"/>
+            <path d="M17.695 12.3039C17.695 12.3039 17.6951 12.3042 17.6951 12.3047C17.6951 12.7901 18.0886 13.1836 18.574 13.1836C19.0594 13.1836 19.4529 12.7901 19.4529 12.3047C19.4529 11.3354 18.6643 10.5469 17.6951 10.5469C17.2097 10.5469 16.8162 10.94 16.8162 11.4254C16.8162 11.9108 17.2096 12.3039 17.695 12.3039Z" fill="white"/>
+            <path d="M17.6951 8.78906C19.6336 8.78906 21.2107 10.3662 21.2107 12.3047C21.2107 12.7901 21.6042 13.1836 22.0896 13.1836C22.575 13.1836 22.9685 12.7901 22.9685 12.3047C22.9685 9.39691 20.6028 7.03125 17.6951 7.03125C17.2097 7.03125 16.8162 7.42477 16.8162 7.91016C16.8162 8.39555 17.2097 8.78906 17.6951 8.78906Z" fill="white"/>
+            <path d="M17.6951 3.51562C17.2097 3.51562 16.8162 3.90914 16.8162 4.39453C16.8162 4.87992 17.2097 5.27344 17.6951 5.27344C21.5721 5.27344 24.7263 8.42766 24.7263 12.3047C24.7263 12.7901 25.1198 13.1836 25.6052 13.1836C26.0906 13.1836 26.4841 12.7901 26.4841 12.3047C26.4841 7.4584 22.5414 3.51562 17.6951 3.51562Z" fill="white"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_1_929">
+              <rect width="30" height="30" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <span class="top-info-item__number">+94 4444 5555 6</span>
+      </li>
+      <li class="top-info-item">
+        <div class="top-info-item__container">
+          <svg class="top-info-item__gps" width="29" height="29" viewBox="0 0 29 29" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.254 0.89209C9.04313 0.89209 4.80371 5.13151 4.80371 10.3423C4.80371 16.8918 14.2632 28.0796 14.2632 28.0796C14.2632 28.0796 23.7042 16.5697 23.7042 10.3423C23.7042 5.13151 19.4649 0.89209 14.254 0.89209ZM17.1053 13.1094C16.3191 13.8954 15.2866 14.2885 14.254 14.2885C13.2215 14.2885 12.1887 13.8954 11.4028 13.1094C9.83051 11.5373 9.83051 8.97914 11.4028 7.40687C12.1641 6.64521 13.1768 6.22571 14.254 6.22571C15.3311 6.22571 16.3436 6.64537 17.1053 7.40687C18.6776 8.97914 18.6776 11.5373 17.1053 13.1094Z" fill="white"/>
+          </svg>
+          <span class="top-info-item__text">but also the leap into electronic typesetting</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="content__center">
+    <svg class="center__bottom-line" width="568" height="258" viewBox="0 0 568 258" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 90.5832C28.934 66.4404 78.6557 31.1588 137.925 15.1579C205.5 -3.08543 322.663 -16.1217 371.172 58.1153C395.132 94.784 369.128 136.415 398 168.415C426.691 200.213 474.941 179.777 511.5 196.915C543.5 211.915 552 238.415 567 256.915" stroke="#E4E4E4"/>
+    </svg>
+    <svg class="center__top-line" width="1048" height="267" viewBox="0 0 1048 267" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1C29.4186 32.5504 103.606 94.1487 173.008 88.1391C259.759 80.6271 319 56 393.377 79.1247C439.677 93.5199 435.257 138.219 477.137 170.771C519.017 203.323 701.495 124.197 701.495 124.197C701.495 124.197 830.127 66.6047 842.591 124.197C855.055 181.789 803.702 250.398 827.135 264.421C845.881 275.638 982.856 224.357 1049 197.313" stroke="#E17A0E" stroke-opacity="0.24"/>
+    </svg>
+    <h2 class="center__title">Say hello</h2>
+    <p class="center__text">Lorem Ipsum is simply dummy text of the printing.</p>
+    <form class="center__contact-form" name="contact-us-form" action="#">
+      <div class="contact-form__name-block">
+        <label class="contact-form__label first-name">
+          <span>First Name</span>
+          <input type="text" name="first-name">
+        </label>
+        <label class="contact-form__label last-name">
+          <span>Last Name</span>
+          <input type="text" name="last-name">
+        </label>
+      </div>
+      <label class="contact-form__label email">
+        <span>Email Address</span>
+        <input type="email" name="email">
+      </label>
+      <label class="contact-form__label massage">
+        <span>Message</span>
+        <textarea name="massage-area"></textarea>
+      </label>
+      <input type="submit" name="send-form" class="contact-form__send-form" value="Get in touch">
+    </form>
+  </section>
+  <section class="content__bottom">
+    <div class="common-block">
+      <h3 class="common-block__title">Lorem Ipsum</h3>
+      <p class="common-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div class="form-block">
+        <div class="form-block__text-block">
+          <h3 class="form-block__title">Stay in the loop</h3>
+          <p class="form-block__text">Subscribe to receive the latest news and updates about TDA. <br>promise not to
+            spam you!</p>
+        </div>
+        <form class="form-block__form" name="email-send-form" action="#">
+          <input class="form__email-input" type="text" name="email-input" placeholder="Enter email address"><!--Надо ли оборачивать в label???-->
+          <input class="form__send-email" type="submit" name="send-email" value="Continue">
+        </form><!--!!!!!!11ПРИСОБАЧИТЬ JS для отправки формы с проверкой на корректность ввода!!!!!!!!-->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__info">
+    <div class="logo-block">
+      <span class="logo-block__logo-top">LOGO</span>
+      <p class="logo-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <span class="logo-block__logo-bottom">@Logo</span>
+    </div>
+    <div class="about-block">
+      <span class="about-block__title">About us</span>
+      <ul class="about-block__list"><!--??Да и это вообще ссылки??-->
+        <li class="about-block__item"><a href="#" class="about-block__link">Zeux</a></li><!--??Куда эти две ссылки??-->
+        <li class="about-block__item"><a href="services.html" class="about-block__link">Portfolio</a></li>
+        <li class="about-block__item"><a href="#" class="about-block__link">Careers</a></li>
+        <li class="about-block__item"><a href="contact.html" class="about-block__link">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="contact-block">
+      <span class="contact-block__title">Contact us</span>
+      <p class="contact-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <span class="contact-block__tel">+908 89097 890</span><!--??Это ссылка??-->
+    </div>
+    <div class="site-list">
+      <a href="#" class="site-link">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.99924 1.9925H9.09474V0.0845C8.90574 0.0585 8.25574 0 7.49874 0C5.91924 0 4.83724 0.9935 4.83724 2.8195V4.5H3.09424V6.633H4.83724V12H6.97424V6.6335H8.64674L8.91224 4.5005H6.97374V3.031C6.97424 2.4145 7.14024 1.9925 7.99924 1.9925Z" fill="black"/>
+        </svg>
+      </a>
+      <a href="#" class="site-link">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.48173 0H3.51971C1.57931 0 0.000732422 1.57858 0.000732422 3.51898V9.4811C0.000732422 11.4214 1.57931 13 3.51971 13H9.48183C11.4221 13 13.0007 11.4214 13.0007 9.4811V3.51898C13.0007 1.57858 11.4221 0 9.48173 0V0ZM12.2386 9.4811C12.2386 11.0012 11.0019 12.2379 9.48173 12.2379H3.51971C1.99955 12.2379 0.762847 11.0012 0.762847 9.4811V3.51898C0.762847 1.99881 1.99955 0.762114 3.51971 0.762114H9.48183C11.0019 0.762114 12.2386 1.99881 12.2386 3.51898V9.4811Z" fill="black"/>
+          <path d="M6.50063 2.94531C4.54059 2.94531 2.94604 4.53986 2.94604 6.49989C2.94604 8.45993 4.54059 10.0545 6.50063 10.0545C8.46066 10.0545 10.0552 8.45993 10.0552 6.49989C10.0552 4.53986 8.46066 2.94531 6.50063 2.94531ZM6.50063 9.29236C4.96093 9.29236 3.70816 8.03969 3.70816 6.49989C3.70816 4.96019 4.96093 3.70743 6.50063 3.70743C8.04043 3.70743 9.29309 4.96019 9.29309 6.49989C9.29309 8.03969 8.04043 9.29236 6.50063 9.29236Z" fill="black"/>
+          <path d="M10.1402 1.68311C9.56096 1.68311 9.08984 2.15432 9.08984 2.73344C9.08984 3.31266 9.56096 3.78388 10.1402 3.78388C10.7194 3.78388 11.1906 3.31266 11.1906 2.73344C11.1906 2.15422 10.7194 1.68311 10.1402 1.68311ZM10.1402 3.02166C9.98129 3.02166 9.85196 2.89233 9.85196 2.73344C9.85196 2.57445 9.98129 2.44522 10.1402 2.44522C10.2992 2.44522 10.4285 2.57445 10.4285 2.73344C10.4285 2.89233 10.2992 3.02166 10.1402 3.02166Z" fill="black"/>
+        </svg>
+      </a>
+      <a href="#" class="site-link">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.0007 2.46919C12.5173 2.68125 12.0022 2.82181 11.4651 2.89006C12.0176 2.56019 12.4393 2.04181 12.6375 1.417C12.1224 1.72412 11.5537 1.94106 10.9475 2.06213C10.4584 1.54131 9.76129 1.21875 9.00079 1.21875C7.52529 1.21875 6.33742 2.41638 6.33742 3.88456C6.33742 4.09581 6.35529 4.29894 6.39917 4.49231C4.18348 4.38425 2.22292 3.32231 0.905857 1.70463C0.67592 2.10356 0.541045 2.56019 0.541045 3.05175C0.541045 3.97475 1.01636 4.79294 1.72486 5.26662C1.29667 5.2585 0.876607 5.13419 0.520732 4.93837C0.520732 4.9465 0.520732 4.95706 0.520732 4.96762C0.520732 6.26275 1.44454 7.3385 2.65598 7.58631C2.43904 7.64563 2.20261 7.67406 1.95723 7.67406C1.78661 7.67406 1.61436 7.66431 1.45267 7.62856C1.79798 8.684 2.77786 9.45994 3.94298 9.48512C3.03623 10.1944 1.88492 10.6218 0.638545 10.6218C0.419982 10.6218 0.210357 10.6121 0.000732422 10.5852C1.18129 11.3466 2.58042 11.7812 4.08923 11.7812C8.99348 11.7812 11.6747 7.71875 11.6747 4.19737C11.6747 4.07956 11.6707 3.96581 11.665 3.85287C12.1939 3.4775 12.6384 3.00869 13.0007 2.46919Z" fill="black"/>
+        </svg>
+      </a>
+      <a href="#" class="site-link">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.9981 11V10.9996H11.0008V6.96531C11.0008 4.99173 10.5759 3.47144 8.26869 3.47144C7.15952 3.47144 6.41519 4.0801 6.11131 4.65714H6.07923V3.65569H3.8916V10.9996H6.16952V7.36314C6.16952 6.40569 6.35102 5.47985 7.53673 5.47985C8.70502 5.47985 8.72244 6.57252 8.72244 7.42456V11H10.9981Z" fill="black"/>
+          <path d="M0.182129 3.65601H2.4628V10.9999H0.182129V3.65601Z" fill="black"/>
+          <path d="M1.32165 0C0.592441 0 0.000732422 0.591708 0.000732422 1.32092C0.000732422 2.05013 0.592441 2.65421 1.32165 2.65421C2.05086 2.65421 2.64257 2.05013 2.64257 1.32092C2.64211 0.591708 2.0504 0 1.32165 0V0Z" fill="black"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <p class="copyright">Copyright ® 2022 prodesigner All rights Rcerved</p>
+</footer>
 </body>
 </html>

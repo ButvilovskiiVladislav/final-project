@@ -279,3 +279,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.common-block {
+  margin-top: 105px;
+}

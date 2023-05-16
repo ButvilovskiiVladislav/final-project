@@ -1,0 +1,245 @@
+@import "style.css";
+
+body {
+  background: linear-gradient(176.32deg, #2211E7 -26.24%, #383837 96.98%);
+}
+/********************/
+.content__top {
+  padding: 186px 0 147px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top__location {
+  font: 400 16px/33px var(--poppins);
+}
+
+.top__location > a {
+  color: var(--white);
+  border-bottom: 3px solid transparent;
+  border-radius: 5px;
+  transition: var(--time);
+}
+
+.top__location > a.active {
+  color: #e47500;
+}
+
+.top__location > a:hover {
+  border-color: var(--dark-orange);
+}
+
+.top__title {
+  text-align: center;
+  font: 600 33px/60px var(--poppins);
+  margin-top: 15px;
+}
+
+.top__text {
+  font: 500 16px/30px var(--poppins);
+  text-align: center;
+  margin-top: 13px;
+}
+
+.top__img {
+  margin-top: 93px;
+  width: 100%;
+  max-width: 1060px;
+}
+
+.top-info-list {
+  margin-top: 62px;
+  display: flex;
+  width: 100%;
+  max-width: 1188px;
+  justify-content: center;
+  height: 102px;
+}
+
+.top-info-item {
+  border-right: 1px solid var(--white);
+  display: flex;
+  align-items: center;
+  width: 37%;
+  justify-content: center;
+}
+
+.top-info-item:first-child {
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 23%;
+}
+
+.top-info-item:last-child {
+  border: 0;
+  width: 40%;
+  justify-content: end;
+}
+
+.top-info-item__follow {
+  font: 400 16px/30px var(--poppins);
+}
+
+.top-info-item__site-list {
+  margin-top: 18px;
+}
+
+.top-info-item__site-item {
+  margin-right: 16px;
+  background: var(--black);
+}
+
+.top-info-item__site-item:last-child {
+  margin: 0;
+}
+
+.top-info-item__site-item > svg {
+  fill: var(--white);
+}
+
+.top-info-item__number, .top-info-item__text {
+  font: 300 20px/30px var(--poppins);
+}
+
+.top-info-item__number {
+  margin-left: 25px;
+}
+
+.top-info-item__container {
+  display: flex;
+}
+
+.top-info-item__text {
+  margin-left: 19px;
+  max-width: 325px;
+}
+/************/
+.content__center {
+  position: relative;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 54px 64px;
+  z-index: 1;
+}
+
+.content__center > svg {
+  position: absolute;
+  z-index: -1;
+}
+
+.center__bottom-line {
+  bottom: 0;
+  left: 0;
+}
+
+.center__top-line {
+  top: 0;
+  right: 0;
+}
+
+.center__title {
+  font: 400 30px/57px var(--poppins);
+  grid-area: title;
+}
+
+.center__text {
+  font: 500 13px/25px var(--poppins);
+  text-align: center;
+  grid-area: text;
+}
+
+.center__contact-form {
+  font: 500 14px/25px var(--poppins);
+  letter-spacing: -.3px;
+  color: #4f4f4f;
+  width: 100%;
+  max-width: 672px;
+  margin-top: 79px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__name-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contact-form__label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact-form__name-block > .contact-form__label {
+  margin-top: 0;
+  width: calc(100%/2 - 13px);
+}
+
+.contact-form__label > input, .contact-form__label > textarea {
+  margin-top: 3px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid #cecece;
+  border-radius: 9px;
+  font: 400 26px/32px var(--poppins);
+  color: var(--white);
+  padding: 2px 8px;
+}
+
+.contact-form__label > input {
+  min-height: 56px;
+}
+
+.contact-form__label > textarea {
+  min-height: 232px;
+  resize: none;
+}
+
+.contact-form__label > textarea::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+.contact-form__label > textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--light-orange);
+}
+
+.first-name {
+  grid-area: first-name;
+}
+
+.last-name {
+  grid-area: last-name;
+}
+
+.email {
+  grid-area: email;
+}
+
+.massage {
+  grid-area: massage-area;
+}
+
+.contact-form__send-form {
+  grid-area: submit;
+  font: 400 16px/33px var(--poppins);
+  color: var(--white);
+  background: var(--dark-orange);
+  border-radius: 10px;
+  padding-block: 10px;
+  width: 100%;
+  max-width: 192px;
+  justify-self: end;
+  margin-top: 51px;
+  align-self: end;
+}
+/***********************************/
+.content__bottom {
+  padding: 150px calc(50% - 585px);
+}
