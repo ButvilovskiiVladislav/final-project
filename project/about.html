@@ -2,9 +2,190 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta type="keywords" content=""><!-- Это надо??? -->
+  <meta type="description" content=""><!-- Это надо??? -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About us</title>
+  <link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
 <body>
+<header class="header">
+  <a href="index.html" class="logo">LOGO</a><!-- ??? -->
 
+  <div class="menu-wrap"><!--указать ширину чтобы убрать марджины у списка-->
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link" target="_blank">Home</a>
+        </li>
+        <li class="menu__item active">
+          <a href="about.html" class="menu__link" target="_blank">About us</a>
+        </li>
+        <li class="menu__item">
+          <a href="services.html" class="menu__link" target="_blank">Portfolio</a>
+        </li>
+        <li class="menu__item">
+          <a href="news.html" class="menu__link" target="_blank">News</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header__link" target="_blank">Contact us</a>
+  </div>
+</header>
+
+<main class="content">
+  <section class="content__top">
+    <div class="top__text-block">
+      <span class="top__location"><a href="index.html">Home</a> >
+      <a href="contact.html" class="active">About us</a></span>
+      <h2 class="text-block__title">Lorem Ipsum is simply dummy text of the printing and.</h2>
+      <p class="text-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      <button type="button" class="text-block__button">Get in touch
+        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.721267 6.98509C0.770368 6.99306 0.820059 6.99673 0.869777 6.99609L9.33554 6.99609L9.15094 7.08195C8.9705 7.16735 8.80635 7.28359 8.66583 7.42539L6.29182 9.7994C5.97916 10.0979 5.92662 10.578 6.16733 10.937C6.44747 11.3196 6.98471 11.4027 7.36732 11.1225C7.39823 11.0999 7.42761 11.0752 7.45522 11.0487L11.7482 6.75568C12.0837 6.42056 12.084 5.87694 11.7489 5.54145C11.7486 5.54123 11.7484 5.54099 11.7482 5.54077L7.45522 1.24781C7.11945 0.912982 6.57583 0.913733 6.24098 1.2495C6.21463 1.27592 6.19002 1.30404 6.16733 1.33367C5.92662 1.69269 5.97916 2.17283 6.29182 2.4713L8.66154 4.84961C8.78751 4.97571 8.93235 5.08145 9.09084 5.16299L9.34841 5.2789L0.917026 5.2789C0.478418 5.26262 0.0936079 5.569 0.0112095 6.00012C-0.0646954 6.46819 0.2532 6.90916 0.721267 6.98509Z" fill="white"/>
+      </svg>
+      </button>
+    </div>
+    <!--!!!!!!!!!!!!!!!!!SWIPER!!!!!!!!!!!!!!!!!!!!!-->
+    <div class="top__swiper">
+      <ul class="swiper__list">
+        <li class="swiper__item"><img src="img/img-14.jpg" alt="town"></li>
+<!--        <li class="swiper__item"><img src="img/img-14.jpg" alt="town"></li>-->
+      </ul>
+      <div class="swiper__nav">
+        <div class="swiper-button-prev"><svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.2787 6.98509C11.2296 6.99306 11.1799 6.99673 11.1302 6.99609L2.66446 6.99609L2.84906 7.08195C3.0295 7.16735 3.19365 7.28359 3.33417 7.42539L5.70818 9.7994C6.02084 10.0979 6.07338 10.578 5.83267 10.937C5.55253 11.3196 5.01529 11.4027 4.63268 11.1225C4.60177 11.0999 4.57239 11.0752 4.54478 11.0487L0.251816 6.75568C-0.0836792 6.42056 -0.0839744 5.87694 0.251145 5.54145C0.25136 5.54123 0.251602 5.54099 0.251816 5.54077L4.54478 1.24781C4.88055 0.912982 5.42417 0.913733 5.75902 1.2495C5.78537 1.27593 5.80998 1.30404 5.83267 1.33367C6.07338 1.69269 6.02084 2.17283 5.70818 2.4713L3.33846 4.84961C3.21249 4.97571 3.06765 5.08145 2.90916 5.16299L2.65159 5.2789L11.083 5.2789C11.5216 5.26262 11.9064 5.569 11.9888 6.00012C12.0647 6.46819 11.7468 6.90916 11.2787 6.98509Z" fill="white"/>
+        </svg></div>
+        <span class="swiper-pagination">1 of 2</span>
+        <div class="swiper-button-next"><svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.721267 6.98509C0.770368 6.99306 0.820059 6.99673 0.869777 6.99609L9.33554 6.99609L9.15094 7.08195C8.9705 7.16735 8.80635 7.28359 8.66583 7.42539L6.29182 9.7994C5.97916 10.0979 5.92662 10.578 6.16733 10.937C6.44747 11.3196 6.98471 11.4027 7.36732 11.1225C7.39823 11.0999 7.42761 11.0752 7.45522 11.0487L11.7482 6.75568C12.0837 6.42056 12.084 5.87694 11.7489 5.54145C11.7486 5.54123 11.7484 5.54099 11.7482 5.54077L7.45522 1.24781C7.11945 0.912982 6.57583 0.913733 6.24098 1.2495C6.21463 1.27593 6.19002 1.30404 6.16733 1.33367C5.92662 1.69269 5.97916 2.17283 6.29182 2.4713L8.66154 4.84961C8.78751 4.97571 8.93235 5.08145 9.09084 5.16299L9.34841 5.2789L0.917026 5.2789C0.478419 5.26262 0.0936076 5.569 0.0112094 6.00012C-0.0646956 6.46819 0.253199 6.90916 0.721267 6.98509Z" fill="white"/>
+        </svg></div>
+      </div>
+    </div>
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+  </section>
+  <section class="content__advantages">
+    <h3 class="advantages__title">Why work with us</h3>
+    <ul class="advantages__advantages-list">
+      <li class="advantages__advantages-item">
+        <span class="advantages__advantages-tag">Lorem ipsum</span>
+        <h4 class="advantages__advantages-title">Lorem ipsum</h4>
+        <p class="advantages__advantages-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+      </li>
+      <li class="advantages__advantages-item">
+        <span class="advantages__advantages-tag">Lorem ipsum</span>
+        <h4 class="advantages__advantages-title">Lorem ipsum</h4>
+        <p class="advantages__advantages-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+      </li>
+      <li class="advantages__advantages-item">
+        <span class="advantages__advantages-tag">Lorem ipsum</span>
+        <h4 class="advantages__advantages-title">Lorem ipsum</h4>
+        <p class="advantages__advantages-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+      </li>
+    </ul>
+  </section>
+  <section class="content__dark-block">
+    <img src="img/img-15.jpg" alt="girl" class="dark-block__img">
+    <div class="dark-block__text-block">
+      <span class="dark-block__tag">Lorem ipsum</span>
+      <h2 class="dark-block__title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+      <p class="dark-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+    </div>
+  </section>
+  <section class="content__our-team">
+    <h2 class="our-team__title">Our Team</h2>
+    <ul class="our-team__list">
+      <li class="our-team__item">
+        <img src="img/bill.png" alt="bill" class="our-team__img bill">
+        <span class="our-team__name">John peter</span>
+        <span class="our-team__tag">COO</span>
+      </li>
+      <li class="our-team__item">
+        <img src="img/beverly.png" alt="beverly" class="our-team__img beverly">
+        <span class="our-team__name">John peter</span>
+        <span class="our-team__tag">COO</span>
+      </li>
+      <li class="our-team__item">
+        <img src="img/claudia.png" alt="claudia" class="our-team__img claudia">
+        <span class="our-team__name">John peter</span>
+        <span class="our-team__tag">COO</span>
+      </li>
+      <li class="our-team__item">
+        <img src="img/avatar.png" alt="avatar" class="our-team__img avatar">
+        <span class="our-team__name">John peter</span>
+        <span class="our-team__tag">COO</span>
+      </li>
+    </ul>
+  </section>
+  <section class="common-block">
+    <h3 class="common-block__title">Lorem Ipsum</h3>
+    <p class="common-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div class="form-block">
+      <div class="form-block__text-block">
+        <h3 class="form-block__title">Stay in the loop</h3>
+        <p class="form-block__text">Subscribe to receive the latest news and updates about TDA. <br>promise not to
+          spam you!</p>
+      </div>
+      <form class="form-block__form" name="email-send-form" action="#">
+        <input class="form__email-input" type="text" name="email-input" placeholder="Enter email address"><!--Надо ли оборачивать в label???-->
+        <input class="form__send-email" type="submit" name="send-email" value="Continue">
+      </form><!--!!!!!!11ПРИСОБАЧИТЬ JS для отправки формы с проверкой на корректность ввода!!!!!!!!-->
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__info">
+    <div class="logo-block">
+      <span class="logo-block__logo-top">LOGO</span>
+      <p class="logo-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <span class="logo-block__logo-bottom">@Logo</span>
+    </div>
+    <div class="about-block">
+      <span class="about-block__title">About us</span>
+      <ul class="about-block__list"><!--??Да и это вообще ссылки??-->
+        <li class="about-block__item"><a href="#" class="about-block__link">Zeux</a></li><!--??Куда эти две ссылки??-->
+        <li class="about-block__item"><a href="services.html" class="about-block__link">Portfolio</a></li>
+        <li class="about-block__item"><a href="#" class="about-block__link">Careers</a></li>
+        <li class="about-block__item"><a href="contact.html" class="about-block__link">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="contact-block">
+      <span class="contact-block__title">Contact us</span>
+      <p class="contact-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a href="tel:+90889097890" class="contact-block__tel">+908 89097 890</a><!--??Это ссылка??-->
+    </div>
+    <div class="site-list">
+      <a href="#" class="site-link">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.99924 1.9925H9.09474V0.0845C8.90574 0.0585 8.25574 0 7.49874 0C5.91924 0 4.83724 0.9935 4.83724 2.8195V4.5H3.09424V6.633H4.83724V12H6.97424V6.6335H8.64674L8.91224 4.5005H6.97374V3.031C6.97424 2.4145 7.14024 1.9925 7.99924 1.9925Z" fill="black"/>
+        </svg>
+      </a>
+      <a href="#" class="site-link">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.48173 0H3.51971C1.57931 0 0.000732422 1.57858 0.000732422 3.51898V9.4811C0.000732422 11.4214 1.57931 13 3.51971 13H9.48183C11.4221 13 13.0007 11.4214 13.0007 9.4811V3.51898C13.0007 1.57858 11.4221 0 9.48173 0V0ZM12.2386 9.4811C12.2386 11.0012 11.0019 12.2379 9.48173 12.2379H3.51971C1.99955 12.2379 0.762847 11.0012 0.762847 9.4811V3.51898C0.762847 1.99881 1.99955 0.762114 3.51971 0.762114H9.48183C11.0019 0.762114 12.2386 1.99881 12.2386 3.51898V9.4811Z" fill="black"/>
+          <path d="M6.50063 2.94531C4.54059 2.94531 2.94604 4.53986 2.94604 6.49989C2.94604 8.45993 4.54059 10.0545 6.50063 10.0545C8.46066 10.0545 10.0552 8.45993 10.0552 6.49989C10.0552 4.53986 8.46066 2.94531 6.50063 2.94531ZM6.50063 9.29236C4.96093 9.29236 3.70816 8.03969 3.70816 6.49989C3.70816 4.96019 4.96093 3.70743 6.50063 3.70743C8.04043 3.70743 9.29309 4.96019 9.29309 6.49989C9.29309 8.03969 8.04043 9.29236 6.50063 9.29236Z" fill="black"/>
+          <path d="M10.1402 1.68311C9.56096 1.68311 9.08984 2.15432 9.08984 2.73344C9.08984 3.31266 9.56096 3.78388 10.1402 3.78388C10.7194 3.78388 11.1906 3.31266 11.1906 2.73344C11.1906 2.15422 10.7194 1.68311 10.1402 1.68311ZM10.1402 3.02166C9.98129 3.02166 9.85196 2.89233 9.85196 2.73344C9.85196 2.57445 9.98129 2.44522 10.1402 2.44522C10.2992 2.44522 10.4285 2.57445 10.4285 2.73344C10.4285 2.89233 10.2992 3.02166 10.1402 3.02166Z" fill="black"/>
+        </svg>
+      </a>
+      <a href="#" class="site-link">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.0007 2.46919C12.5173 2.68125 12.0022 2.82181 11.4651 2.89006C12.0176 2.56019 12.4393 2.04181 12.6375 1.417C12.1224 1.72412 11.5537 1.94106 10.9475 2.06213C10.4584 1.54131 9.76129 1.21875 9.00079 1.21875C7.52529 1.21875 6.33742 2.41638 6.33742 3.88456C6.33742 4.09581 6.35529 4.29894 6.39917 4.49231C4.18348 4.38425 2.22292 3.32231 0.905857 1.70463C0.67592 2.10356 0.541045 2.56019 0.541045 3.05175C0.541045 3.97475 1.01636 4.79294 1.72486 5.26662C1.29667 5.2585 0.876607 5.13419 0.520732 4.93837C0.520732 4.9465 0.520732 4.95706 0.520732 4.96762C0.520732 6.26275 1.44454 7.3385 2.65598 7.58631C2.43904 7.64563 2.20261 7.67406 1.95723 7.67406C1.78661 7.67406 1.61436 7.66431 1.45267 7.62856C1.79798 8.684 2.77786 9.45994 3.94298 9.48512C3.03623 10.1944 1.88492 10.6218 0.638545 10.6218C0.419982 10.6218 0.210357 10.6121 0.000732422 10.5852C1.18129 11.3466 2.58042 11.7812 4.08923 11.7812C8.99348 11.7812 11.6747 7.71875 11.6747 4.19737C11.6747 4.07956 11.6707 3.96581 11.665 3.85287C12.1939 3.4775 12.6384 3.00869 13.0007 2.46919Z" fill="black"/>
+        </svg>
+      </a>
+      <a href="#" class="site-link">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.9981 11V10.9996H11.0008V6.96531C11.0008 4.99173 10.5759 3.47144 8.26869 3.47144C7.15952 3.47144 6.41519 4.0801 6.11131 4.65714H6.07923V3.65569H3.8916V10.9996H6.16952V7.36314C6.16952 6.40569 6.35102 5.47985 7.53673 5.47985C8.70502 5.47985 8.72244 6.57252 8.72244 7.42456V11H10.9981Z" fill="black"/>
+          <path d="M0.182129 3.65601H2.4628V10.9999H0.182129V3.65601Z" fill="black"/>
+          <path d="M1.32165 0C0.592441 0 0.000732422 0.591708 0.000732422 1.32092C0.000732422 2.05013 0.592441 2.65421 1.32165 2.65421C2.05086 2.65421 2.64257 2.05013 2.64257 1.32092C2.64211 0.591708 2.0504 0 1.32165 0V0Z" fill="black"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <p class="copyright">Copyright ® 2022 prodesigner All rights Rcerved</p>
+</footer>
+
+<script src="js/about-js.js"></script>
 </body>
 </html>

@@ -11,25 +11,6 @@ body {
   align-items: center;
 }
 
-.top__location {
-  font: 400 16px/33px var(--poppins);
-}
-
-.top__location > a {
-  color: var(--white);
-  border-bottom: 3px solid transparent;
-  border-radius: 5px;
-  transition: var(--time);
-}
-
-.top__location > a.active {
-  color: #e47500;
-}
-
-.top__location > a:hover {
-  border-color: var(--dark-orange);
-}
-
 .top__title {
   text-align: center;
   font: 600 33px/60px var(--poppins);
