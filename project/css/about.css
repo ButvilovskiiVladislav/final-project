@@ -1,0 +1,225 @@
+@import "style.css";
+
+body {
+  background: linear-gradient(179.5deg, #3B2A9F 33.88%, rgba(47, 69, 182, 0.443967) 81.32%, rgba(114, 138, 185, 0.23) 99.57%);
+}
+/*************/
+.content__top {
+  padding: 121px 0 0 calc(100% - 1330px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top__text-block {
+  width: 100%;
+  max-width: 425px;
+}
+
+.top__location {
+  font: 400 12px/25px var(--poppins);
+}
+
+.text-block__title {
+  font: 700 30px/54px var(--poppins);
+  margin-top: 38px;
+}
+
+.text-block__text {
+  margin-top: 25px;
+  font: 400 15px/31px var(--poppins);
+}
+
+.text-block__button {
+  margin-top: 57px;
+  background: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
+  border-radius: 40px;
+  color: var(--white);
+  font: 500 16px/24px var(--poppins);
+  display: flex;
+  padding: 14px 18px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 176px;
+}
+
+.text-block__button:hover {
+  cursor: pointer;
+}
+/*!!!!!!!!!!!SWIPER!!!!!!!!!!!!!!!!*/
+.top__swiper {
+  position: relative;
+}
+
+.swiper__item {
+  width: 100%;
+  max-width: 739px;
+  max-height: 656px;
+}
+
+.swiper__nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  width: 100%;
+  max-width: 179px;
+  padding: 17px 30px;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+}
+
+.swiper-pagination {
+  font: 500 16px/33px var(--poppins);
+}
+
+.swiper-button-prev, .swiper-button-next {
+
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.content__advantages {
+  padding: 144px calc(50% - 610px) 147px;
+}
+
+.advantages__title {
+  font: 600 24px/45px var(--poppins);
+}
+
+.advantages__advantages-list {
+  margin-top: 63px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__advantages-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: var(--black);
+  box-shadow: 0 4px 94px rgba(0, 0, 0, 0.15);
+  padding: 64px 37px;
+  max-width: 378px;
+}
+
+.advantages__advantages-tag {
+  font: 400 14px/26px var(--poppins);
+  padding: 7px 24px;
+  border-radius: 8px;
+  max-width: 140px;
+}
+
+.advantages__advantages-item:nth-child(1) .advantages__advantages-tag {
+  background: rgba(176, 0, 220, 0.11);
+}
+
+.advantages__advantages-item:nth-child(2) .advantages__advantages-tag {
+  background: rgba(220, 66, 0, 0.11);
+}
+
+.advantages__advantages-item:nth-child(3) .advantages__advantages-tag {
+  background: rgba(0, 220, 141, 0.11);
+}
+
+.advantages__advantages-title {
+  margin-top: 19px;
+  font: 600 20px/38px var(--poppins);
+}
+
+.advantages__advantages-text {
+  margin-top: 16px;
+  font: 400 14px/26px var(--poppins);
+}
+/**********************/
+.content__dark-block {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--black);
+  padding: 113px calc(50% - 610px) 0;
+}
+
+.dark-block__img {
+  width: 100%;
+  max-width: 496px;
+}
+
+.dark-block__text-block {
+  margin: 21px 0 0 95px;
+  width: 100%;
+  max-width: 536px;
+}
+
+.dark-block__tag {
+  font: 500 16px/32px var(--poppins);
+}
+
+.dark-block__title {
+  font: 600 28px/44px var(--poppins);
+  margin-top: 14px;
+}
+
+.dark-block__text {
+  font: 400 16px/32px var(--poppins);
+  margin-top: 30px;
+}
+/*********************/
+.content__our-team {
+  padding: 148px calc(50% - 654px) 0 calc(50% - 610px);
+}
+
+.our-team__title {
+  font: 600 25px/45px var(--poppins);
+}
+
+.our-team__list {
+  display: flex;
+  margin-top: 53px;
+  justify-content: space-between;
+}
+
+.our-team__item {
+  width: 100%;
+  max-width: 295px;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  align-items: center;
+  min-height: 253px;
+  justify-content: flex-end;
+}
+
+.our-team__img.bill {
+  width: 100%;
+  max-width: 123px;
+}
+
+.our-team__img.beverly {
+  width: 100%;
+  max-width: 117px;
+}
+
+.our-team__img.claudia {
+  width: 100%;
+  max-width: 109px;
+}
+
+.our-team__img.avatar {
+  width: 100%;
+  max-width: 106px;
+}
+
+.our-team__name {
+  font: 600 19px/38px var(--poppins);
+}
+
+.our-team__tag {
+  font: 300 16px/32px var(--poppins);
+}
+/*************/
+.common-block {
+  padding: 157px calc(50% - 585px) 153px;
+}

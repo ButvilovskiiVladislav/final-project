@@ -126,6 +126,25 @@ body {
   padding: 12px 28px;
   margin-left: 8px;
 }
+/*********/
+.top__location {
+  font: 400 16px/33px var(--poppins);
+}
+
+.top__location > a {
+  color: var(--white);
+  border-bottom: 3px solid transparent;
+  border-radius: 5px;
+  transition: var(--time);
+}
+
+.top__location > a.active {
+  color: #e47500;
+}
+
+.top__location > a:hover {
+  border-color: var(--dark-orange);
+}
 /***Общий блок****/
 .common-block__title {
   font: 600 30px/1.875 var(--poppins);
@@ -222,6 +241,7 @@ body {
 .logo-block__text, .logo-block__logo-bottom, .contact-block__text, .contact-block__tel {
   font: 400 16px/24px var(--poppins);
   margin-top: 15px;
+  color: var(--white);
 }
 
 .logo-block__logo-bottom {
@@ -242,7 +262,7 @@ body {
   color: var(--white);
 }
 
-.about-block__link:hover {
+.about-block__link:hover, .contact-block__tel:hover {
   color: #9c762f;
   transition: var(--time);
 }
