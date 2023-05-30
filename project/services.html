@@ -2,9 +2,264 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta type="keywords" content=""><!-- Это надо??? -->
+  <meta type="description" content=""><!-- Это надо??? -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/services.css">
 </head>
 <body>
+<header class="header">
+  <a href="index.html" class="logo">LOGO</a><!-- ??? -->
 
+  <div class="menu-wrap"><!--указать ширину чтобы убрать марджины у списка-->
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link" target="_blank">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="about.html" class="menu__link" target="_blank">About us</a>
+        </li>
+        <li class="menu__item active">
+          <a href="services.html" class="menu__link" target="_blank">Portfolio</a>
+        </li>
+        <li class="menu__item">
+          <a href="news.html" class="menu__link" target="_blank">News</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header__link" target="_blank">Contact us</a>
+  </div>
+</header>
+
+<main class="content">
+  <section class="content__top">
+    <span class="top__location"><a href="index.html">Home</a> > <a href="contact.html" class="active">Portfolio</a></span>
+    <h2 class="top__title">Lorem Ipsum is simply dummy text of the printing and.</h2>
+    <p class="top__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <ul class="top__statistic-list">
+      <li class="top__statistic-item">
+        <div class="statistic-item__icon"><svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10.8001C13.4548 10.8001 14.3705 10.4208 15.0456 9.74568C15.7207 9.07055 16.1 8.15488 16.1 7.2001C16.1 6.24532 15.7207 5.32964 15.0456 4.65451C14.3705 3.97938 13.4548 3.6001 12.5 3.6001C11.5452 3.6001 10.6296 3.97938 9.95442 4.65451C9.27929 5.32964 8.90001 6.24532 8.90001 7.2001C8.90001 8.15488 9.27929 9.07055 9.95442 9.74568C10.6296 10.4208 11.5452 10.8001 12.5 10.8001ZM7.39866 21.6001C5.57686 21.6001 4.04225 20.0687 4.73942 18.3856C5.16156 17.3664 5.7803 16.4404 6.56031 15.6604C7.34032 14.8804 8.26633 14.2616 9.28547 13.8395C10.3046 13.4174 11.3969 13.2001 12.5 13.2001C13.6031 13.2001 14.6954 13.4174 15.7145 13.8395C16.7337 14.2616 17.6597 14.8804 18.4397 15.6604C19.2197 16.4404 19.8385 17.3664 20.2606 18.3856C20.9578 20.0687 19.4232 21.6001 17.6014 21.6001H7.39866Z" fill="#DC7000"/>
+        </svg></div>
+        <div class="statistic-item__info">
+          <span class="statistic-item__number">90+</span>
+          <span class="statistic-item__text">Clients</span>
+        </div>
+      </li>
+      <li class="top__statistic-item">
+        <div class="statistic-item__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 9C19 8.08075 18.8189 7.1705 18.4672 6.32122C18.1154 5.47194 17.5998 4.70026 16.9497 4.05025C16.2997 3.40024 15.5281 2.88463 14.6788 2.53284C13.8295 2.18106 12.9193 2 12 2C11.0807 2 10.1705 2.18106 9.32122 2.53284C8.47194 2.88463 7.70026 3.40024 7.05025 4.05025C6.40024 4.70026 5.88463 5.47194 5.53284 6.32122C5.18106 7.1705 5 8.08075 5 9C5 10.387 5.41 11.677 6.105 12.765H6.097C8.457 16.46 12 22 12 22L17.903 12.765H17.896C18.6164 11.6414 18.9995 10.3347 19 9ZM12 12C11.2044 12 10.4413 11.6839 9.87868 11.1213C9.31607 10.5587 9 9.79565 9 9C9 8.20435 9.31607 7.44129 9.87868 6.87868C10.4413 6.31607 11.2044 6 12 6C12.7956 6 13.5587 6.31607 14.1213 6.87868C14.6839 7.44129 15 8.20435 15 9C15 9.79565 14.6839 10.5587 14.1213 11.1213C13.5587 11.6839 12.7956 12 12 12Z" fill="#DC7000"/>
+        </svg></div>
+        <div class="statistic-item__info">
+          <span class="statistic-item__number">30+</span>
+          <span class="statistic-item__text">Countries</span>
+        </div>
+      </li>
+      <li class="top__statistic-item">
+        <div class="statistic-item__icon"><svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.5 3H4.5C3.96957 3 3.46086 3.21071 3.08579 3.58579C2.71071 3.96086 2.5 4.46957 2.5 5V9C2.5 9.53043 2.71071 10.0391 3.08579 10.4142C3.46086 10.7893 3.96957 11 4.5 11H20.5C21.0304 11 21.5391 10.7893 21.9142 10.4142C22.2893 10.0391 22.5 9.53043 22.5 9V5C22.5 4.46957 22.2893 3.96086 21.9142 3.58579C21.5391 3.21071 21.0304 3 20.5 3ZM15.5 7C15.5 7.55228 15.0523 8 14.5 8C13.9477 8 13.5 7.55228 13.5 7C13.5 6.44772 13.9477 6 14.5 6C15.0523 6 15.5 6.44772 15.5 7ZM19.5 7C19.5 7.55228 19.0523 8 18.5 8C17.9477 8 17.5 7.55228 17.5 7C17.5 6.44772 17.9477 6 18.5 6C19.0523 6 19.5 6.44772 19.5 7ZM20.5 13H4.5C3.96957 13 3.46086 13.2107 3.08579 13.5858C2.71071 13.9609 2.5 14.4696 2.5 15V19C2.5 19.5304 2.71071 20.0391 3.08579 20.4142C3.46086 20.7893 3.96957 21 4.5 21H20.5C21.0304 21 21.5391 20.7893 21.9142 20.4142C22.2893 20.0391 22.5 19.5304 22.5 19V15C22.5 14.4696 22.2893 13.9609 21.9142 13.5858C21.5391 13.2107 21.0304 13 20.5 13ZM15.5 17C15.5 17.5523 15.0523 18 14.5 18C13.9477 18 13.5 17.5523 13.5 17C13.5 16.4477 13.9477 16 14.5 16C15.0523 16 15.5 16.4477 15.5 17ZM19.5 17C19.5 17.5523 19.0523 18 18.5 18C17.9477 18 17.5 17.5523 17.5 17C17.5 16.4477 17.9477 16 18.5 16C19.0523 16 19.5 16.4477 19.5 17Z" fill="#DC7000"/>
+        </svg></div>
+        <div class="statistic-item__info">
+          <span class="statistic-item__number">50+</span>
+          <span class="statistic-item__text">Projects</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="content__video-block">
+    <div class="video-block__video">
+      <img src="img/video.png" alt="video" class="video__img">
+      <button type="button" name="video-button" class="video__button"><svg width="65" height="61" viewBox="0 0 65 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32.5 58.6443C48.9213 58.6443 62.2334 46.0884 62.2334 30.5999C62.2334 15.1113 48.9213 2.55542 32.5 2.55542C16.0788 2.55542 2.76669 15.1113 2.76669 30.5999C2.76669 46.0884 16.0788 58.6443 32.5 58.6443Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M26.5532 19.3821L44.3932 30.5999L26.5532 41.8176V19.3821Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg></button>
+    </div>
+    <div class="video-block__text-block">
+      <h2 class="video-block__title">Lorem Ipsum is simply dummy text.</h2>
+      <p class="video-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy .</p>
+      <ul class="video-block__list">
+        <li class="video-block__item">Lorem Ipsum is simply</li>
+        <li class="video-block__item">Lorem Ipsum is simply</li>
+        <li class="video-block__item">Lorem Ipsum is simply</li>
+        <li class="video-block__item">Lorem Ipsum is simply</li>
+      </ul>
+    </div>
+  </section>
+  <section class="content__game-block">
+    <img src="img/img-16.jpg" alt="town" class="game-block__img town">
+    <img src="img/img-17.jpg" alt="girl" class="game-block__img girl">
+    <img src="img/img-18.jpg" alt="crysis" class="game-block__img crysis">
+    <div class="game-block__text-block block-1">
+      <h2 class="game-block__title">Lorem Ipsum is simply dummy
+        text dummy text</h2>
+      <p class="game-block__text first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+      <p class="game-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a class="game-block__button">Read more</a>
+    </div>
+    <div class="game-block__text-block block-2">
+      <h2 class="game-block__title">Lorem Ipsum is simply dummy
+        text dummy text</h2>
+      <p class="game-block__text first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+      <p class="game-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a class="game-block__button">Read more</a>
+    </div>
+    <div class="game-block__text-block block-3">
+      <h2 class="game-block__title">Lorem Ipsum is simply dummy
+        text dummy text</h2>
+      <p class="game-block__text first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+      <p class="game-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a class="game-block__button">Read more</a>
+    </div>
+  </section>
+  <section class="content__feedback-block">
+    <h2 class="feedback-block__title">Trusted by Thousands of Happy Customer</h2>
+    <p class="feedback-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy .</p>
+    <!--SWIPER!!!!!!-->
+    <div class="feedback-block__swiper">
+      <ul class="swiper__list">
+        <li class="swiper__item">
+          <div class="item__info-block">
+            <div class="item__info">
+              <img src="img/people-1.png" alt="robert">
+              <div class="item__personal-info">
+                <span class="item__name">Viezh Robert</span>
+                <span class="item__location">Warsaw, Poland</span>
+              </div>
+            </div>
+            <div class="item__rating-block">
+              <span class="item__rating">4.5</span>
+              <svg width="16" height="16" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1891 6.16515L10.2219 5.58859L8.44844 1.99328C8.4 1.89484 8.32031 1.81515 8.22187 1.76672C7.975 1.64484 7.675 1.7464 7.55156 1.99328L5.77812 5.58859L1.81094 6.16515C1.70156 6.18078 1.60156 6.23234 1.525 6.31047C1.43244 6.4056 1.38143 6.53359 1.38319 6.66631C1.38495 6.79904 1.43933 6.92563 1.53437 7.01828L4.40469 9.81672L3.72656 13.7683C3.71066 13.8602 3.72083 13.9547 3.75592 14.0412C3.79102 14.1276 3.84963 14.2025 3.92511 14.2573C4.00059 14.3121 4.08992 14.3447 4.18297 14.3513C4.27602 14.358 4.36907 14.3384 4.45156 14.2948L8 12.4292L11.5484 14.2948C11.6453 14.3464 11.7578 14.3636 11.8656 14.3448C12.1375 14.298 12.3203 14.0402 12.2734 13.7683L11.5953 9.81672L14.4656 7.01828C14.5437 6.94172 14.5953 6.84172 14.6109 6.73234C14.6531 6.4589 14.4625 6.20578 14.1891 6.16515V6.16515Z" fill="#FEA250"/>
+              </svg>
+            </div>
+          </div>
+          <p class="info__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        </li>
+        <li class="swiper__item">
+          <div class="item__info-block">
+            <div class="item__info">
+              <img src="img/people-2.png" alt="christy">
+              <div class="item__personal-info">
+                <span class="item__name">Yessica Christy</span>
+                <span class="item__location">Shanxi, China</span>
+              </div>
+            </div>
+            <div class="item__rating-block">
+              <span class="item__rating">4.5</span>
+              <svg width="16" height="16" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1891 6.16515L10.2219 5.58859L8.44844 1.99328C8.4 1.89484 8.32031 1.81515 8.22187 1.76672C7.975 1.64484 7.675 1.7464 7.55156 1.99328L5.77812 5.58859L1.81094 6.16515C1.70156 6.18078 1.60156 6.23234 1.525 6.31047C1.43244 6.4056 1.38143 6.53359 1.38319 6.66631C1.38495 6.79904 1.43933 6.92563 1.53437 7.01828L4.40469 9.81672L3.72656 13.7683C3.71066 13.8602 3.72083 13.9547 3.75592 14.0412C3.79102 14.1276 3.84963 14.2025 3.92511 14.2573C4.00059 14.3121 4.08992 14.3447 4.18297 14.3513C4.27602 14.358 4.36907 14.3384 4.45156 14.2948L8 12.4292L11.5484 14.2948C11.6453 14.3464 11.7578 14.3636 11.8656 14.3448C12.1375 14.298 12.3203 14.0402 12.2734 13.7683L11.5953 9.81672L14.4656 7.01828C14.5437 6.94172 14.5953 6.84172 14.6109 6.73234C14.6531 6.4589 14.4625 6.20578 14.1891 6.16515V6.16515Z" fill="#FEA250"/>
+              </svg>
+            </div>
+          </div>
+          <p class="info__text">Lorem Ipsum is simply dummy text of the printing and </p>
+        </li>
+        <li class="swiper__item">
+          <div class="item__info-block">
+            <div class="item__info">
+              <img src="img/people-3.png" alt="kim">
+              <div class="item__personal-info">
+                <span class="item__name">Kim Young Jou</span>
+                <span class="item__location">Seoul, South Korea</span>
+              </div>
+            </div>
+            <div class="item__rating-block">
+              <span class="item__rating">4.5</span>
+              <svg width="16" height="16" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1891 6.16515L10.2219 5.58859L8.44844 1.99328C8.4 1.89484 8.32031 1.81515 8.22187 1.76672C7.975 1.64484 7.675 1.7464 7.55156 1.99328L5.77812 5.58859L1.81094 6.16515C1.70156 6.18078 1.60156 6.23234 1.525 6.31047C1.43244 6.4056 1.38143 6.53359 1.38319 6.66631C1.38495 6.79904 1.43933 6.92563 1.53437 7.01828L4.40469 9.81672L3.72656 13.7683C3.71066 13.8602 3.72083 13.9547 3.75592 14.0412C3.79102 14.1276 3.84963 14.2025 3.92511 14.2573C4.00059 14.3121 4.08992 14.3447 4.18297 14.3513C4.27602 14.358 4.36907 14.3384 4.45156 14.2948L8 12.4292L11.5484 14.2948C11.6453 14.3464 11.7578 14.3636 11.8656 14.3448C12.1375 14.298 12.3203 14.0402 12.2734 13.7683L11.5953 9.81672L14.4656 7.01828C14.5437 6.94172 14.5953 6.84172 14.6109 6.73234C14.6531 6.4589 14.4625 6.20578 14.1891 6.16515V6.16515Z" fill="#FEA250"/>
+              </svg>
+            </div>
+          </div>
+          <p class="info__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </li>
+      </ul>
+      <div class="swiper__nav">
+        <ul class="swiper-pagination">
+          <li class="swiper-page active"></li>
+          <li class="swiper-page"></li>
+          <li class="swiper-page"></li>
+          <li class="swiper-page"></li>
+        </ul>
+        <div class="swiper-button">
+          <div class="swiper-button-prev"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.75 13.75H8.925L13.4625 8.29998C13.6747 8.04471 13.7768 7.71561 13.7463 7.38507C13.7158 7.05454 13.5553 6.74965 13.3 6.53748C13.0447 6.32531 12.7156 6.22323 12.3851 6.2537C12.0546 6.28418 11.7497 6.44471 11.5375 6.69998L5.2875 14.2C5.24545 14.2596 5.20785 14.3223 5.175 14.3875C5.175 14.45 5.175 14.4875 5.0875 14.55C5.03084 14.6933 5.00118 14.8459 5 15C5.00118 15.1541 5.03084 15.3067 5.0875 15.45C5.0875 15.5125 5.0875 15.55 5.175 15.6125C5.20785 15.6777 5.24545 15.7403 5.2875 15.8L11.5375 23.3C11.655 23.4411 11.8022 23.5546 11.9686 23.6323C12.1349 23.7101 12.3164 23.7503 12.5 23.75C12.7921 23.7505 13.0751 23.6488 13.3 23.4625C13.4266 23.3575 13.5312 23.2287 13.6079 23.0832C13.6846 22.9378 13.7318 22.7787 13.7469 22.6149C13.762 22.4512 13.7447 22.2861 13.6959 22.1291C13.6471 21.9721 13.5678 21.8263 13.4625 21.7L8.925 16.25H23.75C24.0815 16.25 24.3995 16.1183 24.6339 15.8839C24.8683 15.6494 25 15.3315 25 15C25 14.6685 24.8683 14.3505 24.6339 14.1161C24.3995 13.8817 24.0815 13.75 23.75 13.75Z"/>
+          </svg>
+          </div>
+          <div class="swiper-button-next"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.25 13.75H21.075L16.5375 8.29998C16.3253 8.04471 16.2232 7.71561 16.2537 7.38507C16.2842 7.05454 16.4447 6.74965 16.7 6.53748C16.9553 6.32531 17.2844 6.22323 17.6149 6.2537C17.9454 6.28418 18.2503 6.44471 18.4625 6.69998L24.7125 14.2C24.7545 14.2596 24.7922 14.3223 24.825 14.3875C24.825 14.45 24.825 14.4875 24.9125 14.55C24.9692 14.6933 24.9988 14.8459 25 15C24.9988 15.1541 24.9692 15.3067 24.9125 15.45C24.9125 15.5125 24.9125 15.55 24.825 15.6125C24.7922 15.6777 24.7545 15.7403 24.7125 15.8L18.4625 23.3C18.345 23.4411 18.1978 23.5546 18.0314 23.6323C17.8651 23.7101 17.6836 23.7503 17.5 23.75C17.2079 23.7505 16.9249 23.6488 16.7 23.4625C16.5734 23.3575 16.4688 23.2287 16.3921 23.0832C16.3154 22.9378 16.2682 22.7787 16.2531 22.6149C16.238 22.4512 16.2553 22.2861 16.3041 22.1291C16.3529 21.9721 16.4322 21.8263 16.5375 21.7L21.075 16.25H6.25C5.91848 16.25 5.60054 16.1183 5.36612 15.8839C5.1317 15.6494 5 15.3315 5 15C5 14.6685 5.1317 14.3505 5.36612 14.1161C5.60054 13.8817 5.91848 13.75 6.25 13.75Z"/>
+          </svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="common-block">
+    <h3 class="common-block__title">Lorem Ipsum</h3>
+    <p class="common-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div class="form-block">
+      <div class="form-block__text-block">
+        <h3 class="form-block__title">Stay in the loop</h3>
+        <p class="form-block__text">Subscribe to receive the latest news and updates about TDA. <br>promise not to
+          spam you!</p>
+      </div>
+      <form class="form-block__form" name="email-send-form" action="#">
+        <input class="form__email-input" type="text" name="email-input" placeholder="Enter email address"><!--Надо ли оборачивать в label???-->
+        <input class="form__send-email" type="submit" name="send-email" value="Continue">
+      </form><!--!!!!!!11ПРИСОБАЧИТЬ JS для отправки формы с проверкой на корректность ввода!!!!!!!!-->
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__info">
+    <div class="logo-block">
+      <span class="logo-block__logo-top">LOGO</span>
+      <p class="logo-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <span class="logo-block__logo-bottom">@Logo</span>
+    </div>
+    <div class="about-block">
+      <span class="about-block__title">About us</span>
+      <ul class="about-block__list"><!--??Да и это вообще ссылки??-->
+        <li class="about-block__item"><a href="#" class="about-block__link">Zeux</a></li><!--??Куда эти две ссылки??-->
+        <li class="about-block__item"><a href="services.html" class="about-block__link">Portfolio</a></li>
+        <li class="about-block__item"><a href="#" class="about-block__link">Careers</a></li>
+        <li class="about-block__item"><a href="contact.html" class="about-block__link">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="contact-block">
+      <span class="contact-block__title">Contact us</span>
+      <p class="contact-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a href="tel:+90889097890" class="contact-block__tel">+908 89097 890</a><!--??Это ссылка??-->
+    </div>
+    <div class="site-list">
+      <a href="#" class="site-link">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.99924 1.9925H9.09474V0.0845C8.90574 0.0585 8.25574 0 7.49874 0C5.91924 0 4.83724 0.9935 4.83724 2.8195V4.5H3.09424V6.633H4.83724V12H6.97424V6.6335H8.64674L8.91224 4.5005H6.97374V3.031C6.97424 2.4145 7.14024 1.9925 7.99924 1.9925Z" fill="black"/>
+        </svg>
+      </a>
+      <a href="#" class="site-link">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.48173 0H3.51971C1.57931 0 0.000732422 1.57858 0.000732422 3.51898V9.4811C0.000732422 11.4214 1.57931 13 3.51971 13H9.48183C11.4221 13 13.0007 11.4214 13.0007 9.4811V3.51898C13.0007 1.57858 11.4221 0 9.48173 0V0ZM12.2386 9.4811C12.2386 11.0012 11.0019 12.2379 9.48173 12.2379H3.51971C1.99955 12.2379 0.762847 11.0012 0.762847 9.4811V3.51898C0.762847 1.99881 1.99955 0.762114 3.51971 0.762114H9.48183C11.0019 0.762114 12.2386 1.99881 12.2386 3.51898V9.4811Z" fill="black"/>
+          <path d="M6.50063 2.94531C4.54059 2.94531 2.94604 4.53986 2.94604 6.49989C2.94604 8.45993 4.54059 10.0545 6.50063 10.0545C8.46066 10.0545 10.0552 8.45993 10.0552 6.49989C10.0552 4.53986 8.46066 2.94531 6.50063 2.94531ZM6.50063 9.29236C4.96093 9.29236 3.70816 8.03969 3.70816 6.49989C3.70816 4.96019 4.96093 3.70743 6.50063 3.70743C8.04043 3.70743 9.29309 4.96019 9.29309 6.49989C9.29309 8.03969 8.04043 9.29236 6.50063 9.29236Z" fill="black"/>
+          <path d="M10.1402 1.68311C9.56096 1.68311 9.08984 2.15432 9.08984 2.73344C9.08984 3.31266 9.56096 3.78388 10.1402 3.78388C10.7194 3.78388 11.1906 3.31266 11.1906 2.73344C11.1906 2.15422 10.7194 1.68311 10.1402 1.68311ZM10.1402 3.02166C9.98129 3.02166 9.85196 2.89233 9.85196 2.73344C9.85196 2.57445 9.98129 2.44522 10.1402 2.44522C10.2992 2.44522 10.4285 2.57445 10.4285 2.73344C10.4285 2.89233 10.2992 3.02166 10.1402 3.02166Z" fill="black"/>
+        </svg>
+      </a>
+      <a href="#" class="site-link">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.0007 2.46919C12.5173 2.68125 12.0022 2.82181 11.4651 2.89006C12.0176 2.56019 12.4393 2.04181 12.6375 1.417C12.1224 1.72412 11.5537 1.94106 10.9475 2.06213C10.4584 1.54131 9.76129 1.21875 9.00079 1.21875C7.52529 1.21875 6.33742 2.41638 6.33742 3.88456C6.33742 4.09581 6.35529 4.29894 6.39917 4.49231C4.18348 4.38425 2.22292 3.32231 0.905857 1.70463C0.67592 2.10356 0.541045 2.56019 0.541045 3.05175C0.541045 3.97475 1.01636 4.79294 1.72486 5.26662C1.29667 5.2585 0.876607 5.13419 0.520732 4.93837C0.520732 4.9465 0.520732 4.95706 0.520732 4.96762C0.520732 6.26275 1.44454 7.3385 2.65598 7.58631C2.43904 7.64563 2.20261 7.67406 1.95723 7.67406C1.78661 7.67406 1.61436 7.66431 1.45267 7.62856C1.79798 8.684 2.77786 9.45994 3.94298 9.48512C3.03623 10.1944 1.88492 10.6218 0.638545 10.6218C0.419982 10.6218 0.210357 10.6121 0.000732422 10.5852C1.18129 11.3466 2.58042 11.7812 4.08923 11.7812C8.99348 11.7812 11.6747 7.71875 11.6747 4.19737C11.6747 4.07956 11.6707 3.96581 11.665 3.85287C12.1939 3.4775 12.6384 3.00869 13.0007 2.46919Z" fill="black"/>
+        </svg>
+      </a>
+      <a href="#" class="site-link">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.9981 11V10.9996H11.0008V6.96531C11.0008 4.99173 10.5759 3.47144 8.26869 3.47144C7.15952 3.47144 6.41519 4.0801 6.11131 4.65714H6.07923V3.65569H3.8916V10.9996H6.16952V7.36314C6.16952 6.40569 6.35102 5.47985 7.53673 5.47985C8.70502 5.47985 8.72244 6.57252 8.72244 7.42456V11H10.9981Z" fill="black"/>
+          <path d="M0.182129 3.65601H2.4628V10.9999H0.182129V3.65601Z" fill="black"/>
+          <path d="M1.32165 0C0.592441 0 0.000732422 0.591708 0.000732422 1.32092C0.000732422 2.05013 0.592441 2.65421 1.32165 2.65421C2.05086 2.65421 2.64257 2.05013 2.64257 1.32092C2.64211 0.591708 2.0504 0 1.32165 0V0Z" fill="black"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <p class="copyright">Copyright ® 2022 prodesigner All rights Rcerved</p>
+</footer>
 </body>
 </html>
