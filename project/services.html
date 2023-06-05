@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta type="keywords" content=""><!-- Это надо??? -->
-  <meta type="description" content=""><!-- Это надо??? -->
+  <meta type="keywords" content="">
+  <meta type="description" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
@@ -11,10 +11,11 @@
 </head>
 <body>
 <header class="header">
-  <a href="index.html" class="logo">LOGO</a><!-- ??? -->
+  <a href="index.html" class="logo">LOGO</a>
 
-  <div class="menu-wrap"><!--указать ширину чтобы убрать марджины у списка-->
+  <div class="menu-wrap">
     <nav class="menu">
+      <a class="menu__button-list">></a>
       <ul class="menu__list">
         <li class="menu__item">
           <a href="index.html" class="menu__link" target="_blank">Home</a>
@@ -22,7 +23,7 @@
         <li class="menu__item">
           <a href="about.html" class="menu__link" target="_blank">About us</a>
         </li>
-        <li class="menu__item active">
+        <li class="menu__item">
           <a href="services.html" class="menu__link" target="_blank">Portfolio</a>
         </li>
         <li class="menu__item">
@@ -89,9 +90,6 @@
     </div>
   </section>
   <section class="content__game-block">
-    <img src="img/img-16.jpg" alt="town" class="game-block__img town">
-    <img src="img/img-17.jpg" alt="girl" class="game-block__img girl">
-    <img src="img/img-18.jpg" alt="crysis" class="game-block__img crysis">
     <div class="game-block__text-block block-1">
       <h2 class="game-block__title">Lorem Ipsum is simply dummy
         text dummy text</h2>
@@ -99,6 +97,7 @@
       <p class="game-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       <a class="game-block__button">Read more</a>
     </div>
+    <img src="img/img-16.jpg" alt="town" class="game-block__img town">
     <div class="game-block__text-block block-2">
       <h2 class="game-block__title">Lorem Ipsum is simply dummy
         text dummy text</h2>
@@ -106,6 +105,7 @@
       <p class="game-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       <a class="game-block__button">Read more</a>
     </div>
+    <img src="img/img-17.jpg" alt="girl" class="game-block__img girl">
     <div class="game-block__text-block block-3">
       <h2 class="game-block__title">Lorem Ipsum is simply dummy
         text dummy text</h2>
@@ -113,11 +113,11 @@
       <p class="game-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       <a class="game-block__button">Read more</a>
     </div>
+    <img src="img/img-18.jpg" alt="crysis" class="game-block__img crysis">
   </section>
   <section class="content__feedback-block">
     <h2 class="feedback-block__title">Trusted by Thousands of Happy Customer</h2>
     <p class="feedback-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy .</p>
-    <!--SWIPER!!!!!!-->
     <div class="feedback-block__swiper">
       <ul class="swiper__list">
         <li class="swiper__item">
@@ -204,9 +204,9 @@
           spam you!</p>
       </div>
       <form class="form-block__form" name="email-send-form" action="#">
-        <input class="form__email-input" type="text" name="email-input" placeholder="Enter email address"><!--Надо ли оборачивать в label???-->
+        <input class="form__email-input" type="text" name="email-input" placeholder="Enter email address">
         <input class="form__send-email" type="submit" name="send-email" value="Continue">
-      </form><!--!!!!!!11ПРИСОБАЧИТЬ JS для отправки формы с проверкой на корректность ввода!!!!!!!!-->
+      </form>
     </div>
   </section>
 </main>
@@ -220,8 +220,8 @@
     </div>
     <div class="about-block">
       <span class="about-block__title">About us</span>
-      <ul class="about-block__list"><!--??Да и это вообще ссылки??-->
-        <li class="about-block__item"><a href="#" class="about-block__link">Zeux</a></li><!--??Куда эти две ссылки??-->
+      <ul class="about-block__list">
+        <li class="about-block__item"><a href="#" class="about-block__link">Zeux</a></li>
         <li class="about-block__item"><a href="services.html" class="about-block__link">Portfolio</a></li>
         <li class="about-block__item"><a href="#" class="about-block__link">Careers</a></li>
         <li class="about-block__item"><a href="contact.html" class="about-block__link">Contact us</a></li>
@@ -230,7 +230,7 @@
     <div class="contact-block">
       <span class="contact-block__title">Contact us</span>
       <p class="contact-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <a href="tel:+90889097890" class="contact-block__tel">+908 89097 890</a><!--??Это ссылка??-->
+      <a href="tel:+90889097890" class="contact-block__tel">+908 89097 890</a>
     </div>
     <div class="site-list">
       <a href="#" class="site-link">
@@ -261,5 +261,7 @@
   </div>
   <p class="copyright">Copyright ® 2022 prodesigner All rights Rcerved</p>
 </footer>
+
+<script src="js/common-block-js.js"></script>
 </body>
 </html>

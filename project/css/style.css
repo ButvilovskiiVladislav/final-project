@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 1px;
+}
+
 li {
   list-style: none;
 }
@@ -34,7 +38,7 @@ a {
 
 body {
   color: var(--white);
-  font: 400 14px/1.4 "Arial", var(--poppins), var(--rubik); /*могу ли я так указать???*/
+  font: 400 14rem/1.4 "Arial", var(--poppins), var(--rubik);
 }
 /*header*/
 .header {
@@ -54,7 +58,7 @@ body {
 }
 
 .logo {
-  font: 800 29px/45px var(--poppins);
+  font: 800 29rem/45rem var(--poppins);
 }
 
 .menu-wrap {
@@ -69,6 +73,26 @@ body {
 .menu {
   width: 100%;
   max-width: 506px;
+  position: relative;
+}
+
+.menu__button-list {
+  font: 800 16rem/20rem var(--rubik);
+  border: 2px solid var(--white);
+  padding: 0 5px;
+  border-radius: 5px;
+  transform: rotate(90deg);
+  display: none;
+  visibility: hidden;
+  transition: var(--time);
+}
+
+.menu__button-list:hover {
+  cursor: pointer;
+}
+
+.menu__open-list {
+  transform: rotate(270deg);
 }
 
 .menu__list {
@@ -76,6 +100,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.menu__list.open-menu {
+  display: flex;
+  visibility: visible;
+}
+
+.menu__burger-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .menu__item {
@@ -116,12 +153,12 @@ body {
 }
 
 .menu__link {
-  font: 400 16px/24px var(--poppins);
+  font: 400 16rem/24rem var(--poppins);
 }
 
 .header__link {
   text-align: center;
-  font: 400 13px/20px var(--poppins);
+  font: 400 13rem/20rem var(--poppins);
   background: var(--light-orange);
   border-radius: 6px;
   padding: 12px 28px;
@@ -137,18 +174,18 @@ body {
 
 .top__title {
   text-align: center;
-  font: 600 33px/60px var(--poppins);
+  font: 600 33rem/60rem var(--poppins);
   margin-top: 15px;
 }
 
 .top__text {
-  font: 500 16px/30px var(--poppins);
+  font: 500 16rem/30rem var(--poppins);
   text-align: center;
   margin-top: 13px;
 }
 
 .top__location {
-  font: 400 16px/33px var(--poppins);
+  font: 400 16rem/33rem var(--poppins);
 }
 
 .top__location > a {
@@ -167,11 +204,11 @@ body {
 }
 /***Общий блок****/
 .common-block__title {
-  font: 600 30px/1.875 var(--poppins);
+  font: 600 30rem/1.875 var(--poppins);
 }
 
 .common-block__text {
-  font: 400 16px/1.875 var(--poppins);
+  font: 400 16rem/1.875 var(--poppins);
   margin-top: 32px;
   max-width: 545px;
 }
@@ -191,12 +228,12 @@ body {
 }
 
 .form-block__title {
-  font: 500 30px/45px var(--poppins);
+  font: 500 30rem/45rem var(--poppins);
 }
 
 .form-block__text {
   margin-top: 10px;
-  font: 400 17px/26px var(--poppins);
+  font: 400 17rem/26rem var(--poppins);
   max-width: 636px;
 }
 
@@ -216,17 +253,17 @@ body {
   text-align: center;
   width: 100%;
   padding-inline: 15px;
-  font: 500 18px/30px var(--poppins);
+  font: 500 18rem/30rem var(--poppins);
 }
 
 .form__email-input::placeholder {
-  font: 300 12px/20px var(--poppins);
+  font: 300 12rem/20rem var(--poppins);
   text-align: center;
   color: #898989;
 }
 
 .form__send-email {
-  font: 400 13px/20px var(--poppins);
+  font: 400 13rem/20rem var(--poppins);
   text-align: center;
   color: var(--white);
   background: var(--dark-orange);
@@ -237,6 +274,14 @@ body {
 
 .form__send-email:hover {
   cursor: pointer;
+}
+
+.error-common-form {
+  border: 2px solid #f80606;
+}
+
+.error-common-input::placeholder {
+  color: #f80606;
 }
 /****footer****/
 .footer {
@@ -255,11 +300,11 @@ body {
 .logo-block {}
 
 .logo-block__logo-top {
-  font: 800 24px/37px var(--poppins);
+  font: 800 24rem/37rem var(--poppins);
 }
 
 .logo-block__text, .logo-block__logo-bottom, .contact-block__text, .contact-block__tel {
-  font: 400 16px/24px var(--poppins);
+  font: 400 16rem/24rem var(--poppins);
   margin-top: 15px;
   color: var(--white);
 }
@@ -270,7 +315,7 @@ body {
 }
 
 .about-block__title, .contact-block__title {
-  font: 500 17px/26px var(--poppins);
+  font: 500 17rem/26rem var(--poppins);
 }
 
 .about-block__list {
@@ -278,7 +323,7 @@ body {
 }
 
 .about-block__link {
-  font: 400 16px/30px var(--poppins);
+  font: 400 16rem/30rem var(--poppins);
   color: var(--white);
 }
 
@@ -318,9 +363,145 @@ body {
 }
 
 .copyright {
-  font: 400 13px/25px var(--poppins);
+  font: 400 13rem/25rem var(--poppins);
   text-align: center;
   padding-block: 29px;
   border-top: 1px solid #d2d2d2;
   margin-top: 56px;
+}
+
+@media (min-width: 845px) and (max-width: 951px) {
+  .header {
+    padding-inline: 5px;
+  }
+
+  .site-list {
+    display: none;
+  }
+
+  .footer__info {
+    grid-template-columns: 372px 90px 282px;
+  }
+}
+
+@media (max-width: 844px) and (min-width: 696px) {
+  .header {
+    padding-inline: 5px;
+  }
+
+  .footer__info {
+    grid-template-columns: 372px 282px;
+  }
+
+  .site-list {
+    display: none;
+  }
+
+  .about-block {
+    display: none;
+  }
+
+  .form-block {
+    flex-direction: column;
+  }
+
+  .form-block__form {
+    margin-top: 20px;
+  }
+
+  .menu__list {
+    display: none;
+    flex-direction: column;
+    max-width: 110px;
+    position: absolute;
+    top: 25px;
+    left: -35px;
+    border: 2px solid var(--light-orange);
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--black);
+    visibility: hidden;
+  }
+
+  .header__link {
+    padding-inline: 20px;
+  }
+
+  .menu__button-list {
+    display: inline-block;
+    visibility: visible;
+  }
+
+  .menu__item {
+    margin-top: 10px;
+  }
+
+  .menu__item:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 696px) {
+  .header {
+    padding-inline: 5px;
+  }
+
+  .footer__info {
+    display: flex;
+  }
+
+  .logo-block {
+    max-width: 372px;
+  }
+
+  .contact-block {
+    display: none;
+  }
+
+  .site-list {
+    display: none;
+  }
+
+  .about-block {
+    display: none;
+  }
+
+  .form-block {
+    flex-direction: column;
+  }
+
+  .form-block__form {
+    margin-top: 20px;
+  }
+
+  .menu__list {
+    display: none;
+    flex-direction: column;
+    max-width: 110px;
+    position: absolute;
+    top: 25px;
+    left: -35px;
+    border: 2px solid var(--light-orange);
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--black);
+    visibility: hidden;
+  }
+
+  .header__link {
+    padding-inline: 20px;
+  }
+
+  .menu__button-list {
+    display: inline-block;
+    visibility: visible;
+  }
+
+  .menu__item {
+    margin-top: 10px;
+  }
+
+  .menu__item:first-child {
+    margin-top: 0;
+  }
 }
